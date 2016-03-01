@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Conor- Personal Site</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Conor<span class="color">.</span></h1>
+            <nav>
+                <ul>
+<!--                    <li><a href="index.html">Home</a></li>-->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="main-image">
+        <div class="wrapper">
+            <h2><strong>Welcome,</strong><br/>
+            to my world!</h2>
+            <a href="gallery.html" class="button-1">Take a closer look.</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="wrapper">
+            <div id="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+    
+</html>
