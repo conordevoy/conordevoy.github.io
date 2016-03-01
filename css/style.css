@@ -209,6 +209,7 @@ div.desc {
 form {
     padding: 2px;
     float:left;
+    margin-bottom: 30px;
 }
 
 #all_contact {
