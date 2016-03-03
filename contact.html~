@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Conor- Personal Site</title>
+<!--    [if lt IE 9]>-->
+<!--    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+<!--    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="../dist/leaflet.ie.css" /><![endif]-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div id="full-page">
+    <header>
+        <div class="wrapper">
+            <h1>Contact<span class="color">.</span></h1>
+        </div>
+    </header>
+    <div id="wrapper">
+<!--    <div id="all_contact">-->
+    <div id="main_text">
+        <h3>Get in Touch</h3>
+        <div id="text-heads">Feel free to contact me using any  of the options below:</div><br/><br/>
+        <div id="text-heads">
+        <form>
+            Your name:<br/><br/>
+            <input name="name" type="text" size="30" /><br/><br/>
+            Your email:<br/><br/>
+            <input name="email" type="text" size="30" /><br/><br/>
+            Your message:<br/><br/>
+            <textarea id="message" class="input" name="message" rows="7" cols="45"></textarea><br /><br/><br/>
+<!--            <input id="button" type="submit" value="Send email" /><br/><br/><br/>-->
+            <a href="http://i.imgur.com/BuCZZ1i.gif" class="button-2">Enter</a>
+        </form>
+        </div>
+<!--
+        <div id="contacts">  
+            Email: conor.devoy@gmail.com<br/><br/>
+            Phone: 0872873823<br/><br/>
+            Address: 16 Weston Heights,<br/>
+            Weston Park, Lucan, Dublin,<br/>
+            Ireland<br/>
+        </div>
+-->
+    <div id="map"></div>
+    </div>
+    </div>
+<!--    </div>-->
+    <div id="clear"></div>
+    </div>
+    
+    <footer>
+        <div class="wrapper">
+            <div id="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src="./basemapurl.js" type="text/javascript"></script>
+
+	<script>
+	var map = L.map('map');
+
+	var zoomax = 19
+	var mapaerial = new L.TileLayer(openstreetUrl, {
+    	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+		}, {maxZoom: zoomax, subdomains:'1234'});
+
+	var baseLayers = {		
+		"Map Quest Aerial": mapaerial,
+	};
+
+	map.addLayer(mapaerial);
+	map.setView([53.5,-7.75],6); 	
+
+	L.marker([53.35,-6.33]).addTo(map).bindPopup('I am here!<br>Contact me at:<br>conor.devoy@gmail.com');
+	
+	</script>
+</body>
+    
+</html>
