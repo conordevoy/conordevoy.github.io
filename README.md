@@ -1,3 +1,3 @@
-# conordevoy.github.io
+Peronal website
 
-GitHub Pages website
+http://conordevoy.github.io/
