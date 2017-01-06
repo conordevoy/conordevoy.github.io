@@ -89,6 +89,21 @@ header nav ul li a {
     background-position: center;
 }
 
+#map {
+/*    border: 1px solid black;*/
+/*    height: 595px;*/
+/*    width: 590px;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    float: center;*/
+/*    position: fixed;*/
+/*    margin-right: 77px;*/
+    height: 500px;
+    padding-top: 1px;
+    background-size: cover;
+    background-position: center;
+}
+
 #main-image h2 {
 	margin: 180px 0 40px 0;
     color: #444;
@@ -208,6 +223,13 @@ div.desc {
     margin-left: 26px;
 }
 
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #444;
+    margin-left: 26px;
+}
+
 form {
     padding: 2px;
     float:left;
@@ -222,17 +244,6 @@ form {
     color: #444;
     margin: 0 300px 25px 0;
     float: left;
-}
-
-#map {
-    border: 1px solid black;
-    height: 595px;
-    width: 590px;
-    margin: 0;
-    padding: 0;
-    float: center;
-/*    position: fixed;*/
-    margin-right: 77px;
 }
 
 #clear {
